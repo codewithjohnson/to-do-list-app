@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #405559;
+  color: #c7c8bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#input-task {
+  height: 40px;
+  width:400px;
+  background-color: #405559;
+  outline: none;
+  border-bottom: 1px solid white;
+  color:white;
+  margin-right:5px;
+  padding: 5px 20px;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span{
+  text-decoration:line-through;
+  color:black;
+  font-weight:bold;
+}
+
+#add-task-button{
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(purple,red);
+    color: white;
+    padding: 10px 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#todos {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  width: 50%;
+  display: Flex;
+  flex-direction: column;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left:-30px
+  
+}
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+    margin-right:5px;
+}
+
+@media screen and (max-width: 600px){
+  .right{
+    margin-right:20px;
+}
+}
+
+.task {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.delete-btn{
+  background-color: #405559;
+}
+
+img{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+
+  #add-task-button{
+    font-size: 12px;
+    cursor: pointer;
+    background: linear-gradient(purple,red);
+    color: white;
+    padding: 10px 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+  .input-box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #input-task {
+    height: 40px;
+    background-color: #405559;
+    outline: none;
+    border-bottom: 1px solid white;
+    color:white;
+    margin-right:5px;
+    padding:10px 8px;;
+  }
+  
+  #todos {
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  #input-task {
+    width: 75%;
+    height:40px;
+  }
+}
